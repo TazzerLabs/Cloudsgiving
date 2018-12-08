@@ -59,8 +59,23 @@ class AjaxSignUp(Ajax):
         if User.objects.filter(email=self.email).exists():
         	return self.error("Email address already in use.")
 
-        u = User(username=self.username, password=make_password(self.password), email=self.email)
-        u.save()
+        #create a new bucket
+        #Creates a random ID and try's to create a bucket
+        # this might fail if a bucket with that ID exists in google storage, so it trys up to 100 times
+        bucket_name = "" 
+        for i in range(0,100):
+            while True:
+                try:
+                    bucket_name = uuid4()
+                    storage_client = storage.Client()
+                    bucket = storage_client.create_bucket(bucket_name)
+                    print('Bucket {} created'.format(bucket.name))
+                except Exception:
+                    continue
+                break
+
+        u = User(username=self.username, password=make_password(self.password), email=self.email, bucket=bucket_name)
+        u.save() 
 
         return self.success("Account Created!")
 
