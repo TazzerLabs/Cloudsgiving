@@ -20,16 +20,6 @@ def signup(request):
     context = {}
     return render(request, 'sign-up.html', context)
 
-def home(request):
-	context = {}
-	if request.is_authenticated:
-		u = User.objects.filter(username=request.user.username)[0]
-		if u.profilepic == "":
-			u.profilepic = "static/assets/img/default.png"
-		context = { 'user': request.user, 'ProfilePic': u.profilepic}
-		return render(request, 'logged-in-index.html', context)
-
 def index(request):
     context = {}
     return render(request, 'index.html', context)
-

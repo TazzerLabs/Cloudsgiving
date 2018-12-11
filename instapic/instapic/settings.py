@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'instapic.wsgi.application'
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.mysql',
-	'NAME': 'Cloudinsta',
+	'NAME': 'instapic',
 	'USER': 'root',
 	'PASSWORD': '12345678',
 	'HOST': '127.0.0.1',
@@ -131,5 +131,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
-
-AUTHENTICATION_BACKENDS = ( 'instapic.authb.AuthB', )
