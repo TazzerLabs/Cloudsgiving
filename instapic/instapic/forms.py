@@ -5,6 +5,8 @@ from instapic.models import User
 from django.contrib.auth.hashers import make_password, check_password
 from urllib.request import urlopen
 from random import randint
+from lib import uuid
+from google.cloud import storage
 
 import json, re
 
@@ -66,7 +68,7 @@ class AjaxSignUp(Ajax):
         for i in range(0,100):
             while True:
                 try:
-                    bucket_name = uuid4()
+                    bucket_name = str(uuid.uuid4())
                     storage_client = storage.Client()
                     bucket = storage_client.create_bucket(bucket_name)
                     print('Bucket {} created'.format(bucket.name))
