@@ -89,6 +89,12 @@ DATABASES = {
     # }
 }
 
+# Uploadcare
+UPLOADCARE = {
+
+    'pub_key': '5eadecba86290d1f50cc',
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -131,3 +137,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+AUTHENTICATION_BACKENDS = ( 'instapic.authb.AuthB', )
