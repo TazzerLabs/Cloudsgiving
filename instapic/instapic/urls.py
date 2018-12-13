@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^upload$', views.upload, name='upload'),
     url(r'^sign-up$', views.signup),
     url(r'^logout$', views.Logout, name='logout'),
+    url(r'^search$', views.search, name='search'),
     url(r'^(?P<username>[a-zA-Z0-9_]+)$', views.profile),
     url(r'^ajax-sign-up$', views.ajaxsignup),
     url(r'^ajax-login$', views.ajaxlogin),

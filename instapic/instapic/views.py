@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from .models import User, Photo, Followers
 from .forms import *
@@ -65,6 +66,27 @@ def home(request):
 		return render(request, 'logged-in-index.html', context)
 
 	return render(request, 'index.html', context)
+
+def search(request):
+    srch = request.POST['search']
+
+    # if able to get user input
+    if srch:
+        Umatch = User.objects.filter(username__icontains=srch)
+        Cmatch = Photo.objects.filter(caption__icontains=srch)
+
+        # check the tables user and captions
+        if Umatch:
+            return render(request, 'search.html', {'sr':Umatch})
+        elif Cmatch:
+            return render(request, 'search.html', {'sr':Cmatch})
+        else:
+                messages.error(request, 'no result found')
+    else:
+        return redirect(home) # didn't get the search item
+
+    return redirect(home) # something really messed up to get here
+
 
 def profile(request, username):
 	if User.objects.filter(username=username).exists():
