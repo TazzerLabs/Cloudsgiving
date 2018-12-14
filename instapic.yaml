@@ -1,0 +1,76 @@
+# NOTE: anything with encoded should be replace with your GCP ID
+# For more information about Services see:
+# https://cloud.google.com/container-engine/docs/services/
+# For more information about external HTTP load balancing see:
+# https://cloud.google.com/container-engine/docs/load-balancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: instapic
+  labels:
+    app: instapic
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: instapic
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: instapic
+  labels:
+    app: instapic
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: instapic
+    spec:
+      containers:
+      - name: instapic-app
+        # Replace with your project ID or use `make template`
+        image: gcr.io/encoded-stage-214622/instapic
+        # This setting makes nodes pull the docker image every time before
+        # starting the pod. This is useful when debugging, but should be turned
+        # off in production.
+        imagePullPolicy: Always
+        env:
+            - name: DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: cloudsql
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: cloudsql
+                  key: password
+        ports:
+        - containerPort: 8080
+      - image: gcr.io/cloudsql-docker/gce-proxy:1.05
+        name: cloudsql-proxy
+        command: ["/cloud_sql_proxy", "--dir=/cloudsql",
+                  "-instances=encoded-stage-214622:instapic=tcp:3306",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        volumeMounts:
+          - name: cloudsql-oauth-credentials
+            mountPath: /secrets/cloudsql
+            readOnly: true
+          - name: ssl-certs
+            mountPath: /etc/ssl/certs
+          - name: cloudsql
+            mountPath: /cloudsql
+      volumes:
+        - name: cloudsql-oauth-credentials
+          secret:
+            secretName: cloudsql-oauth-credentials
+        - name: ssl-certs
+          hostPath:
+            path: /etc/ssl/certs
+        - name: cloudsql
+          emptyDir:
+
