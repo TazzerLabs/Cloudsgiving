@@ -1,0 +1,20 @@
+{
+ "execution": [
+  {
+   "scenario": {
+    "script": "locustfile.py"
+   }, 
+   "ramp-up": "30s", 
+   "locations": {
+    "us-west-2": 1, 
+    "us-west-1": 1
+   }, 
+   "concurrency": {
+    "local": 10, 
+    "cloud": 50000
+   }, 
+   "executor": "locust", 
+   "hold-for": "400m"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+[2018-12-14 03:23:52,172 INFO root] Taurus CLI Tool v1.13.2
+[2018-12-14 03:23:52,173 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/tmp/bzt_uCXH7M.log', 'option': None, 'aliases': []}
+[2018-12-14 03:23:52,173 DEBUG root] Python: CPython 2.7.15rc1
+[2018-12-14 03:23:52,173 DEBUG root] OS: ('Linux', 'instagram', '4.15.0-1025-gcp', '#26-Ubuntu SMP Sat Nov 17 00:02:47 UTC 2018', 'x86_64', 'x86_64')
+[2018-12-14 03:23:52,174 INFO root] Starting with configs: ['locust.yaml']
+[2018-12-14 03:23:52,174 DEBUG root] Using personal config: /home/vasilkin/.bzt-rc
+[2018-12-14 03:23:52,174 INFO Engine] Configuring...
+[2018-12-14 03:23:52,194 DEBUG Engine] Base configs list: [u'/home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/10-base-config.yml']
+[2018-12-14 03:23:52,194 DEBUG Engine.Configuration] Configs: [u'/home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/10-base-config.yml']
+[2018-12-14 03:23:52,195 DEBUG Engine.Configuration] Reading /home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/10-base-config.yml as YAML
+[2018-12-14 03:23:52,218 DEBUG Engine] User configs list: ['/home/vasilkin/.bzt-rc', 'locust.yaml']
+[2018-12-14 03:23:52,219 DEBUG Engine.Configuration] Configs: ['/home/vasilkin/.bzt-rc', 'locust.yaml']
+[2018-12-14 03:23:52,219 DEBUG Engine.Configuration] Reading /home/vasilkin/.bzt-rc as YAML
+[2018-12-14 03:23:52,222 DEBUG Engine.Configuration] Reading locust.yaml as YAML
+[2018-12-14 03:23:52,224 DEBUG Engine.Configuration] Configs: ['/home/vasilkin/.bzt-rc', 'locust.yaml']
+[2018-12-14 03:23:52,225 DEBUG Engine.Configuration] Reading /home/vasilkin/.bzt-rc as YAML
+[2018-12-14 03:23:52,227 DEBUG Engine.Configuration] Reading locust.yaml as YAML
+[2018-12-14 03:23:52,230 INFO Engine] Artifacts dir: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+[2018-12-14 03:23:52,231 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective
+[2018-12-14 03:23:52,232 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.yml
+[2018-12-14 03:23:52,235 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.13.2&installID=linux-42010aa80002
+[2018-12-14 03:23:52,235 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.13.2&installID=linux-42010aa80002
+[2018-12-14 03:23:52,236 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2018-12-14 03:23:52,255 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.json
+[2018-12-14 03:23:52,256 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/merged.yml
+[2018-12-14 03:23:52,257 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/merged.yml
+[2018-12-14 03:23:52,258 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/merged.json
+[2018-12-14 03:23:52,258 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/merged.json
+[2018-12-14 03:23:52,258 DEBUG Engine] Add existing artifact (move=False): locust.yaml
+[2018-12-14 03:23:52,258 DEBUG Engine] Copying locust.yaml to /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/locust.yaml
+[2018-12-14 03:23:52,259 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-12-14 03:23:52,259 DEBUG root] Closing log handler: /tmp/bzt_uCXH7M.log
+[2018-12-14 03:23:52,260 DEBUG root] Switched writing logs to /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/bzt.log
+[2018-12-14 03:23:52,260 DEBUG root] Linting config
+[2018-12-14 03:23:52,262 INFO Engine] Preparing...
+[2018-12-14 03:23:52,263 DEBUG Engine] Module config: consolidator {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'}
+[2018-12-14 03:23:52,263 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-12-14 03:23:52,326 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-12-14 03:23:52,326 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-12-14 03:23:52,327 DEBUG Engine] Module config: monitoring {'class': u'bzt.modules.monitoring.Monitoring'}
+[2018-12-14 03:23:52,327 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-12-14 03:23:52,329 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-12-14 03:23:52,329 DEBUG Engine] Module config: local {'class': u'bzt.modules.provisioning.Local'}
+[2018-12-14 03:23:52,330 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-12-14 03:23:52,330 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-12-14 03:23:52,330 DEBUG Engine] Module config: locust {'class': u'bzt.modules.locustio.LocustIOExecutor'}
+[2018-12-14 03:23:52,330 DEBUG root] Importing module: bzt.modules.locustio
+[2018-12-14 03:23:52,337 DEBUG root] Loading class: 'LocustIOExecutor' from <module 'bzt.modules.locustio' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/locustio.pyc'>
+[2018-12-14 03:23:52,338 DEBUG Engine.local] Preparing executor: locust/139903460693200
+[2018-12-14 03:23:52,338 DEBUG Engine.locust.LocustIO] Checking LocustIO: locust
+[2018-12-14 03:23:52,338 DEBUG bzt.utils] Executing shell: ['locust', '--version'] at .
+[2018-12-14 03:23:52,704 DEBUG Engine.locust.LocustIO] Locustio check stdout/stderr: , [2018-12-14 03:23:52,668] instagram/INFO/stdout: Locust 0.9.0
+[2018-12-14 03:23:52,668] instagram/INFO/stdout: 
+
+[2018-12-14 03:23:52,705 DEBUG Engine.locust] Extract {'script': u'locustfile.py'} into scenarios
+[2018-12-14 03:23:52,705 DEBUG Engine] Add existing artifact (move=False): /home/vasilkin/Cloudsgiving/instapic/locustfile.py
+[2018-12-14 03:23:52,705 DEBUG Engine] Copying /home/vasilkin/Cloudsgiving/instapic/locustfile.py to /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/locustfile.py
+[2018-12-14 03:23:52,705 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/kpi.jtl
+[2018-12-14 03:23:52,706 DEBUG Engine] Module config: final-stats {'class': u'bzt.modules.reporting.FinalStatus'}
+[2018-12-14 03:23:52,706 DEBUG root] Importing module: bzt.modules.reporting
+[2018-12-14 03:23:52,712 DEBUG easyprocess] version=0.2.3
+[2018-12-14 03:23:52,712 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-12-14 03:23:52,736 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-12-14 03:23:52,736 DEBUG Engine] Module config: console {'class': u'bzt.modules.console.ConsoleStatusReporter'}
+[2018-12-14 03:23:52,737 DEBUG root] Importing module: bzt.modules.console
+[2018-12-14 03:23:52,737 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-12-14 03:23:52,744 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.yml
+[2018-12-14 03:23:52,762 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.json
+[2018-12-14 03:23:52,763 INFO Engine] Starting...
+[2018-12-14 03:23:52,764 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f3dd2144250>
+[2018-12-14 03:23:52,764 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f3dd20ef310>
+[2018-12-14 03:23:52,764 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f3dd0087990>
+[2018-12-14 03:23:52,764 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f3dd0079110>
+[2018-12-14 03:23:52,764 INFO Engine.console] Waiting for results...
+[2018-12-14 03:23:52,765 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f3dd21444d0>
+[2018-12-14 03:23:52,765 DEBUG Engine.local] Delay setup for locust/locustfile.py: 0(start-at) + 0(delay) = 0
+[2018-12-14 03:23:52,766 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.yml
+[2018-12-14 03:23:52,769 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.13.2&installID=linux-42010aa80002 HTTP/1.1" 200 60
+[2018-12-14 03:23:52,770 DEBUG Engine] Taurus updates info: {u'needsUpgrade': False, u'latest': u'1.13.2'}
+[2018-12-14 03:23:52,770 DEBUG Engine] Installation is up-to-date
+[2018-12-14 03:23:52,787 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.json
+[2018-12-14 03:23:52,788 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-12-14 03:23:52,788 DEBUG root] Leveled up log file verbosity
+[2018-12-14 03:23:52,788 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/locust.log
+[2018-12-14 03:23:52,789 DEBUG Engine] New artifact filename: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/locust.out
+[2018-12-14 03:23:52,789 DEBUG bzt.utils] Executing shell: ['/usr/bin/python', '/home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/locustio-taurus-wrapper.py', '-f', u'/home/vasilkin/Cloudsgiving/instapic/locustfile.py', '--logfile=/home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/locust.log', '--no-web', '--only-summary', '--clients=10', '--hatch-rate=0.333333'] at /home/vasilkin/Cloudsgiving/instapic
+[2018-12-14 03:23:52,794 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-12-14 03:23:53,012 INFO Engine.console] Waiting for finish...
+[2018-12-14 03:23:53,789 WARNING Engine.locust] Locust exited with non-zero code: 1
+[2018-12-14 03:23:53,832 WARNING Engine] Please wait for graceful shutdown...
+[2018-12-14 03:23:53,836 DEBUG root] Leveled up log file verbosity
+[2018-12-14 03:23:53,837 INFO Engine] Shutting down...
+[2018-12-14 03:23:53,841 DEBUG Engine] Current stop reason: None
+[2018-12-14 03:23:53,841 DEBUG Engine.local] Shutdown locust/locustfile.py
+[2018-12-14 03:23:53,841 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x7f3dd213da90>]/{<logging.StreamHandler object at 0x7f3dd213da90>: <open file '<stdout>', mode 'w' at 0x7f3dd6bc8150>}
+[2018-12-14 03:23:53,843 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.yml
+[2018-12-14 03:23:53,862 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.json
+[2018-12-14 03:23:53,863 INFO Engine] Post-processing...
+[2018-12-14 03:23:53,863 DEBUG Engine.local] Post-process locust/locustfile.py
+[2018-12-14 03:23:53,864 DEBUG Engine.local] Exception in post_process of LocustIOExecutor: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599 Traceback (most recent call last):
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 172, in post_process
+    raise ToolError(message, diagnostics)
+ToolError: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+
+[2018-12-14 03:23:53,864 DEBUG Engine] post_process: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+Traceback (most recent call last):
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/engine.py", line 332, in post_process
+    module.post_process()
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 181, in post_process
+    reraise(exc_info, exc_value)
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 172, in post_process
+    raise ToolError(message, diagnostics)
+ToolError: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+
+[2018-12-14 03:23:53,865 DEBUG Engine.locust.JTLReader.IncrementalCSVReader.FileReader] Reading: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/kpi.jtl
+[2018-12-14 03:23:53,865 DEBUG Engine.locust.JTLReader] Buffer len: 0; Known errors count: 0
+[2018-12-14 03:23:53,865 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2018-12-14 03:23:53,865 INFO Engine.final-stats] Test duration: 0:00:01
+[2018-12-14 03:23:53,865 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-12-14 03:23:53,867 DEBUG Engine.Configuration] Dumping YAML config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.yml
+[2018-12-14 03:23:53,885 DEBUG Engine.Configuration] Dumping JSON config into /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/effective.json
+[2018-12-14 03:23:53,886 ERROR root] Child Process Error: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+[2018-12-14 03:23:53,887 ERROR root] Locust log:
+[2018-12-14 03:23:53,228] instagram/ERROR/locust.main: No Locust class found!
+[2018-12-14 03:23:53,887 DEBUG root] ToolError: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+Traceback (most recent call last):
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/cli.py", line 265, in perform
+    self.engine.post_process()
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/engine.py", line 346, in post_process
+    reraise(exc_info, exc_value)
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/engine.py", line 332, in post_process
+    module.post_process()
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 181, in post_process
+    reraise(exc_info, exc_value)
+  File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 172, in post_process
+    raise ToolError(message, diagnostics)
+ToolError: Empty results, most likely locustfile.py (LocustIOExecutor) failed. Actual reason for this can be found in logs under /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+[2018-12-14 03:23:53,887 INFO root] Artifacts dir: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599
+[2018-12-14 03:23:53,888 WARNING root] Done performing with code: 1
+[2018-12-14 03:23:53,888 DEBUG root] Closing log handler: /home/vasilkin/Cloudsgiving/instapic/2018-12-14_03-23-52.230599/bzt.log

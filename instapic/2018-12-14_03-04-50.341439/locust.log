@@ -1,0 +1,40 @@
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/locustio-taurus-wrapper.py", line 120, in <module>
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: locust_starter.execute()
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/bzt/resources/locustio-taurus-wrapper.py", line 114, in execute
+[2018-12-14 03:04:51,233] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: main.main()
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/main.py", line 391, in main
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: docstring, locusts = load_locustfile(locustfile)
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/main.py", line 358, in load_locustfile
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: imported = __import__(os.path.splitext(locustfile)[0])
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/gevent/builtins.py", line 96, in __import__
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: result = _import(*args, **kwargs)
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: File "
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: /home/vasilkin/Cloudsgiving/instapic/locustfile.py
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: ", line
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 4
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: def on start(self):
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: 
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: ^
+[2018-12-14 03:04:51,234] instagram/ERROR/stderr: SyntaxError
+[2018-12-14 03:04:51,235] instagram/ERROR/stderr: :
+[2018-12-14 03:04:51,235] instagram/ERROR/stderr: invalid syntax
+[2018-12-14 03:04:51,235] instagram/ERROR/stderr: 

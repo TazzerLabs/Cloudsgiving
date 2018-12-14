@@ -1,0 +1,108 @@
+[2018-12-14 03:35:51,995] instagram/INFO/locust.main: Starting Locust 0.9.0
+[2018-12-14 03:35:51,995] instagram/INFO/locust.runners: Hatching and swarming 10 clients at the rate 0.333333 clients/s...
+[2018-12-14 03:35:51,996] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:35:51,996] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:35:51,996] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: 2018-12-14T03:35:51Z
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: 
+[2018-12-14 03:35:51,997] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528680: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: 2018-12-14T03:35:54Z
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: 
+[2018-12-14 03:35:54,999] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528788: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:35:58,001] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:35:58,001] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:35:58,001] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: 2018-12-14T03:35:58Z
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: 
+[2018-12-14 03:35:58,002] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528680: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:01,003] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: 2018-12-14T03:36:01Z
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: 
+[2018-12-14 03:36:01,004] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528788: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: 2018-12-14T03:36:04Z
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: 
+[2018-12-14 03:36:04,006] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528680: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:07,008] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:07,009] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:07,009] instagram/ERROR/stderr: 2018-12-14T03:36:07Z
+[2018-12-14 03:36:07,009] instagram/ERROR/stderr: 
+[2018-12-14 03:36:07,009] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528788: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:10,010] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:10,010] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: 2018-12-14T03:36:10Z
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: 
+[2018-12-14 03:36:10,011] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528680: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: 2018-12-14T03:36:13Z
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: 
+[2018-12-14 03:36:13,013] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528788: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:16,015] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:16,016] instagram/ERROR/stderr: 2018-12-14T03:36:16Z
+[2018-12-14 03:36:16,016] instagram/ERROR/stderr: 
+[2018-12-14 03:36:16,016] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528680: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:19,018] instagram/ERROR/stderr: Traceback (most recent call last):
+[2018-12-14 03:36:19,018] instagram/ERROR/stderr: File "src/gevent/greenlet.py", line 716, in gevent._greenlet.Greenlet.run
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/runners.py", line 114, in start_locust
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: locust().run(runner=self)
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: File "/home/vasilkin/.local/lib/python2.7/site-packages/locust/core.py", line 194, in __init__
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: raise LocustError("You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.")
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: LocustError: You must specify the base host. Either in the host attribute in the Locust class, or on the command line using the --host option.
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: 2018-12-14T03:36:19Z
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: 
+[2018-12-14 03:36:19,019] instagram/ERROR/stderr: <Greenlet "Greenlet-0" at 0x7fc76a528788: start_locust(<class 'locustfile.WebsiteUser'>)> failed with LocustError
+[2018-12-14 03:36:22,020] instagram/INFO/locust.runners: All locusts hatched: WebsiteUser: 10
+[2018-12-14 03:36:22,020] instagram/INFO/locust.runners: All locusts dead
+
+[2018-12-14 03:36:22,021] instagram/INFO/locust.main: Shutting down (exit code 0), bye.
+[2018-12-14 03:36:22,021] instagram/INFO/locust.main: Cleaning up runner...
+[2018-12-14 03:36:22,021] instagram/INFO/locust.main: Running teardowns...

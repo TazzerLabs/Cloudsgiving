@@ -1,0 +1,14 @@
+---
+execution:
+- concurrency:
+    cloud: 50000
+    local: 10
+  executor: locust
+  hold-for: 400m
+  locations:
+    us-west-1: 1
+    us-west-2: 1
+  ramp-up: 30s
+  scenario:
+    script: locustfile.py
+
